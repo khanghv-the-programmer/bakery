@@ -5,6 +5,7 @@ import { BsSearch, BsCart3 } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
 import { AiOutlineHeart, AiOutlineMenu } from "react-icons/ai";
 
+
 const NavLinks = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -26,12 +27,13 @@ const NavLinks = () => {
     };
   }, []);
 
+
   return (
     <div className={`menu-container ${showMenu ? "hSticky" : ""}`}>
       <div className="container">
         <div className="row row-hear align-items-center">
           <div className="manu-bar  d-lg-none d-flex">
-            <AiOutlineMenu style={{ color: "white" }} />
+            <AiOutlineMenu style={{ color: "white", }} />
           </div>
           <div className="col-lg-2 menu-logo">
             <NavLink to={"#"}>
@@ -110,8 +112,9 @@ const NavLinks = () => {
             <div className="icon">
               <BsSearch style={{ fontSize: "25px" }} />
             </div>
-            {/* tao link toi account */}
+            export default Register
             <div className="icon">
+              {/* tao link toi account */}
               <NavLink to={"/login"}>
                 {" "}
                 <FaRegUser style={{ fontSize: "25px", color: "white" }} />
