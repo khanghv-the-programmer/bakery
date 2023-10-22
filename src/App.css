@@ -1,4 +1,6 @@
-* {
+*,
+::after,
+::before {
   padding: 0;
   box-sizing: border-box;
 }
@@ -6,7 +8,7 @@
 body {
   margin: 0;
   font-size: 14px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   background: #fff;
   font-weight: 500;
   color: #000;
@@ -26,7 +28,6 @@ body {
 }
 
 .slider-hidden {
-
   display: none;
 }
 
@@ -65,13 +66,13 @@ body {
   font-size: 35px;
   font-weight: 700;
   position: relative;
-  font-family: 'Playball';
+  font-family: "Playball";
 }
 
 .thumb-slider .slider-text .slider-content {
   font-size: 20px;
   position: relative;
-  font-family: 'Playball';
+  font-family: "Playball";
 }
 
 .thumb-slider .slider-text .slider-button:hover {
@@ -107,7 +108,6 @@ body {
   padding: 0;
   z-index: 1;
   cursor: grab;
-
 }
 
 .container {
@@ -176,7 +176,6 @@ body {
 /*CSS Danh mục*/
 .section-danhmuc {
   margin-top: 50px;
-
 }
 
 .outstanding-box {
@@ -202,7 +201,6 @@ body {
 
 .outstanding-detail {
   margin-top: -80px;
-
 }
 
 .outstanding-detail h3 {
@@ -214,7 +212,7 @@ body {
   right: 0;
   padding: 5px 10px;
   font-weight: 800;
-  font-family: 'Playball';
+  font-family: "Playball";
   margin-right: -20px;
 }
 
@@ -226,11 +224,9 @@ body {
   font-size: 17px;
   text-decoration: none;
   font-weight: 500;
-  font-family: 'Playball';
+  font-family: "Playball";
   color: rgb(35 31 32);
 }
-
-
 
 /*CSS responsive*/
 @media (max-width: 700px) {
@@ -297,7 +293,6 @@ body {
     width: 150px;
   }
 
-
   /*CSS Responsive Danh mục*/
   .section-danhmuc {
     margin-top: 50px;
@@ -338,7 +333,6 @@ body {
 
   .outstanding-detail {
     margin-top: -80px;
-
   }
 
   .outstanding-detail h3 {
@@ -350,7 +344,7 @@ body {
     right: 0;
     padding: 5px 10px;
     font-weight: 800;
-    font-family: 'Playball';
+    font-family: "Playball";
     margin-right: -20px;
   }
 
@@ -362,16 +356,55 @@ body {
     font-size: 17px;
     text-decoration: none;
     font-weight: 500;
-    font-family: 'Playball';
+    font-family: "Playball";
     color: rgb(35 31 32);
   }
-
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
+
+/* css form */
+
+.auth-block_menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 25px;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  margin-bottom: 15px;
+}
+.auth-block_menu-list li {
+  flex: 1 1;
+  text-align: center;
+  position: relative;
+}
+.li {
+  display: list-item;
+}
+
+.ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+a{
+  font-style: none;
+  color:#000;
+  font-weight: 500;
+}
+a:hover{
+  color: #d09c44;
+}
 
 .registing-form {
-  display: flex;
   margin: auto;
   height: 600px;
   text-align: center;
@@ -384,13 +417,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-
 
 .form-field {
   display: flex;
-
 }
 
 .input-field {
@@ -411,11 +441,12 @@ body {
 
 .register-area {
   background-color: #f8e4d4;
-  height: 520px;
+  height: 538px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 30px;
+  border-radius: 1%;
 }
 
 .btn-login {
@@ -446,6 +477,7 @@ body {
 
 .button-area {
   display: flex;
+  flex: 1 1;
   width: 100%;
   flex-direction: row;
   justify-content: center;
@@ -453,11 +485,12 @@ body {
   gap: 10px;
   position: relative;
   top: 25px;
+  margin-bottom: 30px;
 }
 
 .button-login-else {
-  height: 40px;
-  width: 170px;
+  height: 50px;
+  width: 150px;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -467,17 +500,18 @@ body {
   color: #fff;
   font-size: 16px;
   border: transparent;
+  flex: 1 1;
 }
 
 .btn-facebook {
-  background-color: #405c9c;
+  background-color: #405c9c; 
 }
 
 .btn-google {
   background-color: #d8543c;
 }
 
-.logo{
+.logo {
   width: 40px;
   height: 40px;
 }
