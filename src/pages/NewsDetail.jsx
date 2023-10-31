@@ -2,15 +2,15 @@ import React from "react";
 import Slider from "../Components/Slider";
 import FooterList from "../Components/FooterList";
 
-const ProductDetail = () => {
+const NewsDetail = () => {
   return (
     <>
       <div>
-        <Slider title={"Chi tiết sản phẩm"} />
+        <Slider title={"Sản phẩm nỗi bật"} />
       </div>
       <FooterList />
     </>
   );
 };
 
-export default ProductDetail;
+export default NewsDetail;

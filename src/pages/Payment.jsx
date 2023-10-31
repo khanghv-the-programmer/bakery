@@ -2,15 +2,18 @@ import React from "react";
 import Slider from "../Components/Slider";
 import FooterList from "../Components/FooterList";
 
-const ProductDetail = () => {
+const Payment = () => {
   return (
     <>
       <div>
-        <Slider title={"Chi tiết sản phẩm"} />
+        <Slider title={"Thanh toán"} />
+      </div>
+      <div className="content">
+        AAAAA
       </div>
       <FooterList />
     </>
   );
 };
 
-export default ProductDetail;
+export default Payment;
